@@ -168,6 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -176,6 +177,14 @@
     <Compile Include="Migrations\201610241713024_GigGenreAdded.cs" />
     <Compile Include="Migrations\201610241713024_GigGenreAdded.Designer.cs">
       <DependentUpon>201610241713024_GigGenreAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610241738242_PopulateGenreTable.cs" />
+    <Compile Include="Migrations\201610241738242_PopulateGenreTable.Designer.cs">
+      <DependentUpon>201610241738242_PopulateGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610241748087_ExtenededUserClas.cs" />
+    <Compile Include="Migrations\201610241748087_ExtenededUserClas.Designer.cs">
+      <DependentUpon>201610241748087_ExtenededUserClas.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -186,6 +195,9 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\FutureDate.cs" />
+    <Compile Include="ViewModels\GigFormViewModel.cs" />
+    <Compile Include="ViewModels\ValidTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -242,6 +254,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Gigs\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -257,6 +270,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201610241713024_GigGenreAdded.resx">
       <DependentUpon>201610241713024_GigGenreAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610241738242_PopulateGenreTable.resx">
+      <DependentUpon>201610241738242_PopulateGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610241748087_ExtenededUserClas.resx">
+      <DependentUpon>201610241748087_ExtenededUserClas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
