@@ -25,5 +25,8 @@ namespace GigHub.Models
 
         [Required]
         public string ArtistId { get; set; }
+
+
+
     }
 }
